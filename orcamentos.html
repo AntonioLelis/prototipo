@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos - Quantum IA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="min-h-screen flex flex-col justify-center items-center">
+        <h1 class="text-3xl font-bold mb-8">Solicitar Orçamento</h1>
+        <form class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <label for="name" class="block mb-2">Nome</label>
+                <input type="text" id="name" class="w-full p-2 bg-gray-700 text-white rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="service" class="block mb-2">Serviço</label>
+                <select id="service" class="w-full p-2 bg-gray-700 text-white rounded">
+                    <option>Consulta</option>
+                    <option>Projeto Personalizado</option>
+                    <option>Manutenção</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="details" class="block mb-2">Detalhes do Serviço</label>
+                <textarea id="details" class="w-full p-2 bg-gray-700 text-white rounded" rows="4"></textarea>
+            </div>
+            <button type="submit" class="bg-green-600 px-4 py-2 rounded hover:bg-green-700">Solicitar Orçamento</button>
+        </form>
+        <a href="index.html" class="mt-4 text-green-400 hover:underline">Voltar ao Dashboard</a>
+    </div>
+</body>
+</html>
